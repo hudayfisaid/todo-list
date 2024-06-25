@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="profile">
+                <h1>Nama: John Doe</h1>
+                <h2>Jabatan: Manager</h2>
+            </div>
+            <div class="time">
+                <h2 id="current-date">Tanggal: </h2>
+            </div>
+        </header>
+        <main>
+            <div class="input-container">
+                <textarea id="task-input" placeholder="Tuliskan tugas di sini..."></textarea>
+                <div class="priority-container">
+                    <label for="priority">Prioritas: </label>
+                    <select id="priority">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+                <button id="add-task-button">Tambah Tugas</button>
+            </div>
+            <div class="tasks-container">
+                <h3>To-Do</h3>
+                <ul id="todo-list">
+                    <!-- List of tasks will appear here -->
+                </ul>
+                <h3>Done</h3>
+                <ul id="done-list">
+                    <!-- List of completed tasks will appear here -->
+                </ul>
+            </div>
+            <button id="delete-all-button">Hapus Semua To-Do</button>
+        </main>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
